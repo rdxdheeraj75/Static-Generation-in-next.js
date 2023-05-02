@@ -8,7 +8,7 @@ export default function Home({posts}) {
         {
           posts.map((post)=>{
             return <li key={post.id}>
-            <Link href="">{post.title}</Link>
+            <Link href={`/post/${post.id}`}>{post.title}</Link>
             </li>
           })
         }
